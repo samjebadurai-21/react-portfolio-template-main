@@ -1,0 +1,108 @@
+.contact_wrapper svg {
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-form {
+  padding-top: 20px;
+
+  button {
+    float: right;
+    background-color: white;
+    color: #050f0b;
+  }
+
+  button:hover {
+    background-color: #5000ca;
+    color: white;
+  }
+
+  // Simple and effective text field styling
+  .MuiTextField-root {
+    input {
+      color: white !important;
+    }
+    
+    textarea {
+      color: white !important;
+    }
+    
+    label {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+    
+    .MuiOutlinedInput-notchedOutline {
+      border-color: rgba(255, 255, 255, 0.3) !important;
+    }
+    
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: rgba(255, 255, 255, 0.5) !important;
+    }
+    
+    &.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: #5000ca !important;
+    }
+  }
+}
+
+label {
+  font-size: 1.2rem;
+  font-family: 'DomaineDispNar-Medium', sans-serif;
+}
+
+.form-flex {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.form-flex .MuiFormControl-root {
+  width: 100%;
+}
+
+form {
+  width: 100% !important;
+}
+
+.body-form {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+
+// Light mode specific styling
+.light-mode {
+  .contact-form {
+    .MuiInputBase-input {
+      color: #0d1116 !important;
+    }
+
+    .MuiInputLabel-root {
+      color: rgba(13, 17, 22, 0.7) !important;
+    }
+
+    .MuiInputLabel-root.Mui-focused {
+      color: #5000ca !important;
+    }
+
+    .MuiOutlinedInput-root {
+      & fieldset {
+        border-color: rgba(13, 17, 22, 0.3) !important;
+      }
+      &:hover fieldset {
+        border-color: rgba(13, 17, 22, 0.5) !important;
+      }
+      &.Mui-focused fieldset {
+        border-color: #5000ca !important;
+      }
+    }
+
+    .MuiFormHelperText-root {
+      color: rgba(13, 17, 22, 0.6) !important;
+    }
+
+    .MuiFormHelperText-root.Mui-error {
+      color: #f44336 !important;
+    }
+  }
+}
